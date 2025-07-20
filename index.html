@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>To-do</title>
+      <script src="https://cdn.tailwindcss.com"></script> 
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+      <!-- Main -->
+      <main class="flex">
+            <div class="container flex items-center justify-center  p-3">
+                  <div class="w-9/12 flex items-center justify-center flex-col gap-5">
+                        <h1 class="font-semibold text-3xl">📝 Task <span class="text-indigo-600 font-semibold">Manager</span></h1>
+                        <div class="flex items-center ">
+                              <form class="w-full flex gap-2">
+                                    <input type="text" placeholder="Search..." class="w-[420px] px-2 rounded focus:outline-none focus:ring-2 focus:ring-indigo-500 shadow-lg">
+                                    <button id="OpneModelBtn" class="bg-indigo-600 text-white px-4 py-2 rounded shadow-md shadow-indigo-200">Add Taks</button>
+                              </form>
+                        </div>
+                        <!-- Table -->
+                        <table class="w-full">
+                              <!-- Table Head --> 
+                              <thead>
+                                    <tr class="bg-indigo-500 text-white ">
+                                          <th class="p-2">Task</th>
+                                          <th>Date</th>
+                                          <th>Status</th>
+                                          <th>Action</th>
+                                    </tr>
+                              </thead>
+                              <!-- Table Body -->
+                              <tbody id="tbody">
+                              </tbody>
+                        </table>
+                  </div>
+            </div>
+      </main>
+      <script src="script.js"></script>
+</body>
+</html>
